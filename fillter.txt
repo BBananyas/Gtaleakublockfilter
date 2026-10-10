@@ -1,0 +1,185 @@
+! --- HIDE ALL YOUTUBE SHORTS ---
+
+! Shelves
+youtube.com##ytd-reel-shelf-renderer
+youtube.com##ytd-rich-shelf-renderer[is-shorts]
+youtube.com##ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts])
+youtube.com##ytd-rich-section-renderer:has(ytm-shorts-lockup-view-model)
+youtube.com##grid-shelf-view-model:has(ytm-shorts-lockup-view-model)
+
+! Individual cards
+youtube.com##ytm-shorts-lockup-view-model
+youtube.com##ytm-shorts-lockup-view-model-v2
+youtube.com##ytd-reel-item-renderer
+
+! Shorts mixed into video lists
+youtube.com##ytd-rich-item-renderer:has(a[href^="/shorts/"])
+youtube.com##ytd-video-renderer:has(a[href^="/shorts/"])
+youtube.com##ytd-compact-video-renderer:has(a[href^="/shorts/"])
+youtube.com##ytd-grid-video-renderer:has(a[href^="/shorts/"])
+youtube.com##yt-lockup-view-model:has(a[href^="/shorts/"])
+
+! Navigation entries
+youtube.com##ytd-guide-entry-renderer:has(a[title="Shorts"])
+youtube.com##ytd-mini-guide-entry-renderer[aria-label="Shorts"]
+youtube.com##yt-tab-shape[tab-title="Shorts"]
+youtube.com##yt-chip-cloud-chip-renderer:has-text(/^Shorts$/)
+
+! Optional (uBO 1.47+): open /shorts/ links as normal videos
+! youtube.com/shorts/*$doc,uritransform=/\/shorts\//\/watch?v=/
+
+! --- BLOCKED CHANNELS (add new ones as |Name before the closing /i) ---
+! youtube.com##ytd-channel-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
+! youtube.com##ytd-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
+! youtube.com##ytd-rich-item-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
+! youtube.com##ytd-grid-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
+! youtube.com##ytd-compact-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
+! youtube.com##yt-lockup-view-model:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
+! youtube.com##ytd-playlist-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
+
+! --- GTA 6 / CYBERLEEK SPOILERS (YouTube, Reddit, X) ---
+
+! YouTube (regular videos, new cards, playlists)
+youtube.com##ytd-video-renderer:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+youtube.com##ytd-compact-video-renderer:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+youtube.com##ytd-grid-video-renderer:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+youtube.com##ytd-rich-item-renderer:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+youtube.com##yt-lockup-view-model:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+youtube.com##ytd-playlist-renderer:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! Reddit
+reddit.com##shreddit-post:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! X / Twitter (posts and trending topics)
+x.com##article:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+x.com##[data-testid="trend"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+twitter.com##article:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! --- X / TWITTER EXTRAS ---
+! Attribute-based rules: no text matching, so quote tweets and reposts can't slip past
+x.com,twitter.com##[data-testid="cellInnerDiv"]:has(a[href*="cyberleek" i])
+x.com,twitter.com##[data-testid="cellInnerDiv"]:has(a[href*="hashtag/gta6leak" i])
+x.com,twitter.com##[data-testid="cellInnerDiv"]:has(a[href*="hashtag/gtavileak" i])
+x.com,twitter.com##[data-testid="cellInnerDiv"]:has(img[alt*="cyberleek" i])
+! Simple backup rules (short regexes, no lookaheads)
+x.com##[data-testid="cellInnerDiv"]:has-text(/cyber[ -]?le[ae]k/i)
+x.com##article:has-text(/cyber[ -]?le[ae]k/i)
+x.com##[data-testid="tweetText"]:has-text(/cyber[ -]?le[ae]k/i):upward([data-testid="cellInnerDiv"])
+x.com##[data-testid="cellInnerDiv"]:has-text(/gta\W*(?:6|vi)[\s\S]*le[ae]k|le[ae]k[\s\S]*gta\W*(?:6|vi)/i)
+twitter.com##[data-testid="cellInnerDiv"]:has-text(/cyber[ -]?le[ae]k/i)
+twitter.com##article:has-text(/cyber[ -]?le[ae]k/i)
+twitter.com##[data-testid="tweetText"]:has-text(/cyber[ -]?le[ae]k/i):upward([data-testid="cellInnerDiv"])
+twitter.com##[data-testid="cellInnerDiv"]:has-text(/gta\W*(?:6|vi)[\s\S]*le[ae]k|le[ae]k[\s\S]*gta\W*(?:6|vi)/i)
+
+x.com##[data-testid="cellInnerDiv"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+x.com##[data-testid="tweet"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+x.com##[data-testid="UserCell"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+x.com##[data-testid="typeaheadResult"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+x.com##[data-testid="DMConversationEntry"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+twitter.com##[data-testid="cellInnerDiv"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+twitter.com##[data-testid="tweet"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+twitter.com##[data-testid="UserCell"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+twitter.com##[data-testid="typeaheadResult"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+twitter.com##[data-testid="trend"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+twitter.com##[data-testid="DMConversationEntry"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! --- SPOILERS: OTHER SITES ---
+
+! Google Search / News results
+google.*##div.MjjYud:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! Google News cards
+google.*##div.SoaBEf:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! Bluesky
+bsky.app##[data-testid^="feedItem-by-"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! Facebook
+facebook.com##div[role="article"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! Instagram
+instagram.com##article:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! TikTok feed
+tiktok.com##div[data-e2e="recommend-list-item-container"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! Old Reddit
+old.reddit.com##div.thing:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! YouTube comments, notifications, community posts
+youtube.com##ytd-comment-thread-renderer:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+youtube.com##ytd-comment-view-model:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+youtube.com##ytd-notification-renderer:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+youtube.com##ytd-post-renderer:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+youtube.com##ytd-backstage-post-thread-renderer:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! Reddit comments
+reddit.com##shreddit-comment:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+old.reddit.com##div.comment:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! GTA 6 subreddits: hide only posts with a spoiler word
+reddit.com##shreddit-post[subreddit-prefixed-name^="r/GTA6" i]:has-text(/le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game/i)
+old.reddit.com##div.thing[data-subreddit^="GTA6" i]:has-text(/le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game/i)
+
+! --- REDDIT SEARCH RESULTS ---
+reddit.com##search-telemetry-tracker:not(:has(search-telemetry-tracker)):has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! Hide Reddit search page for spoiler queries (needs recent uBO)
+reddit.com##body:matches-path(/^\/search.*[?&]q=(?:(?=[^&#]*(?:gta|grand(?:\+|%20|-)theft))(?=[^&#]*(?:le[ae]k|spoiler|footage|gameplay|datamine|insider|rumou?r|hack|breach))|[^&#]*cyber(?:\+|%20|-)?le[ae]k)/i)
+
+! --- LEAK-FOCUSED SUBREDDITS (block entirely) ---
+
+! Block the subreddit pages from opening (new and old Reddit)
+/^https?:\/\/(?:[a-z0-9-]+\.)*reddit\.com\/r\/(?:cyberleek|gta_?6\w*leak|gtavi\w*leak)/i$doc
+
+! Hide their posts from feeds and search
+reddit.com##shreddit-post[subreddit-prefixed-name^="r/CyberLeek" i]
+reddit.com##shreddit-post[subreddit-prefixed-name*="gta" i][subreddit-prefixed-name*="leak" i]
+old.reddit.com##div.thing[data-subreddit^="CyberLeek" i]
+old.reddit.com##div.thing[data-subreddit*="gta" i][data-subreddit*="leak" i]
+
+! Hide search results pointing at those subs or the leaker's profile
+reddit.com##search-telemetry-tracker:not(:has(search-telemetry-tracker)):has-text(/r\/(?:cyberleek|gta_?6\w*leak|gtavi\w*leak)|u\/gta6leaker/i)
+
+! --- BLOCK SPOILER SEARCHES BEFORE THEY LOAD ---
+/^https?:\/\/(?:[a-z0-9-]+\.)*(?:reddit\.com|youtube\.com|x\.com|twitter\.com|bing\.com|google\.[a-z.]+)\/(?:search|results)[^#]*[?&](?:q|search_query)=(?:(?=[^&#]*(?:gta|grand(?:\+|%20|-)theft))(?=[^&#]*(?:le[ae]k|spoiler|footage|gameplay|datamine|insider|rumou?r|hack|breach))|[^&#]*cyber(?:\+|%20|-)?le[ae]k)/i$doc
+
+! --- DUCKDUCKGO ---
+! Block spoiler searches (page load, and the in-page results request)
+/^https?:\/\/(?:[a-z0-9-]+\.)*duckduckgo\.com\/(?:html\/|lite\/)?[^#]*[?&]q=(?:(?=[^&#]*(?:gta|grand(?:\+|%20|-)theft))(?=[^&#]*(?:le[ae]k|spoiler|footage|gameplay|datamine|insider|rumou?r|hack|breach))|[^&#]*cyber(?:\+|%20|-)?le[ae]k)/i$doc
+/^https?:\/\/links\.duckduckgo\.com\/d\.js[^#]*[?&]q=(?:(?=[^&#]*(?:gta|grand(?:\+|%20|-)theft))(?=[^&#]*(?:le[ae]k|spoiler|footage|gameplay|datamine|insider|rumou?r|hack|breach))|[^&#]*cyber(?:\+|%20|-)?le[ae]k)/i$xhr,script
+
+! Hide matching results
+duckduckgo.com##article[data-testid="result"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+duckduckgo.com##li[data-layout="organic"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+duckduckgo.com##div.result:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! --- OTHER SEARCH ENGINES ---
+! Brave, Startpage, Yahoo, Ecosia, Qwant, Kagi, Yandex, Mojeek, Perplexity
+/^https?:\/\/(?:[a-z0-9-]+\.)*(?:brave\.com|startpage\.com|yahoo\.com|ecosia\.org|qwant\.com|kagi\.com|yandex\.[a-z.]+|mojeek\.com|perplexity\.ai)\/[^#]*[?&](?:q|p|query|text)=(?:(?=[^&#]*(?:gta|grand(?:\+|%20|-)theft))(?=[^&#]*(?:le[ae]k|spoiler|footage|gameplay|datamine|insider|rumou?r|hack|breach))|[^&#]*cyber(?:\+|%20|-)?le[ae]k)/i$doc
+search.brave.com###results .snippet:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+startpage.com##div.result:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+search.yahoo.com##div.algo-sr:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+kagi.com##.search-result:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! --- SEARCH BOX CONTENT (engines that don't put the query in the URL) ---
+! Hides the page if the search box holds a spoiler search
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="gta" i][value*="leak" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="gta" i][value*="leek" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="gta" i][value*="spoiler" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="gta" i][value*="footage" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="gta" i][value*="gameplay" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="gta" i][value*="datamine" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="gta" i][value*="insider" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="gta" i][value*="rumor" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="gta" i][value*="rumour" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="gta" i][value*="hack" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="gta" i][value*="breach" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="cyberleek" i])
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##body:has(input[value*="cyber leek" i])
+
+! --- ALL ENGINES: NEWS CARDS AND RESULTS (no engine-specific names needed) ---
+! Climb from a matching headline link up to its card or result
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##a:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i):upward(:is(article,li,[class*="card" i]))
+! Or hide the innermost card/result that contains a match
+google.*,bing.com,duckduckgo.com,startpage.com,search.brave.com,search.yahoo.com,ecosia.org,qwant.com,kagi.com,mojeek.com,yandex.*##:is([class*="news" i],[class*="card" i],[class*="result" i],article,li):not(:has(:is([class*="news" i],[class*="card" i],[class*="result" i],article,li))):has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
