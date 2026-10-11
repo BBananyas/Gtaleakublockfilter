@@ -29,13 +29,13 @@ youtube.com##yt-chip-cloud-chip-renderer:has-text(/^Shorts$/)
 ! youtube.com/shorts/*$doc,uritransform=/\/shorts\//\/watch?v=/
 
 ! --- BLOCKED CHANNELS (add new ones as |Name before the closing /i) ---
-! youtube.com##ytd-channel-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
-! youtube.com##ytd-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
-! youtube.com##ytd-rich-item-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
-! youtube.com##ytd-grid-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
-! youtube.com##ytd-compact-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
-! youtube.com##yt-lockup-view-model:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
-! youtube.com##ytd-playlist-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##ytd-channel-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##ytd-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##ytd-rich-item-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##ytd-grid-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##ytd-compact-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##yt-lockup-view-model:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##ytd-playlist-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
 
 ! --- GTA 6 / CYBERLEEK SPOILERS (YouTube, Reddit, X) ---
 
@@ -82,6 +82,14 @@ twitter.com##[data-testid="UserCell"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockst
 twitter.com##[data-testid="typeaheadResult"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
 twitter.com##[data-testid="trend"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
 twitter.com##[data-testid="DMConversationEntry"]:has-text(/cyber[\s-]?le(?:ak|ek)|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game))/i)
+
+! --- X / TWITTER: MULTILINGUAL (PT, ES, FR, DE, IT, TR, RU, PL, ID, JA, KO, ZH, AR) ---
+! Foreign leak words only hide a post if it also mentions GTA 6 / VI; the Cyberleek name matches on its own
+x.com,twitter.com##[data-testid="cellInnerDiv"]:has-text(/cyber[\s-]?le(?:ak|ek)|サイバーリーク|киберлик|(?:rockstar|take-?two).{0,20}(?:le[ae]k|hack|breach)|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))|гта\W*(?:6|vi)|グランド・セフト・オート|侠盗猎车手|俠盜獵車手|그랜드 ?테프트 ?오토))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|beta|source code|ending|plot|map|datamine|data mine|insider|rumou?r|hack|breach|stolen|dump|storyline|mission|cutscene|twist|villain|protagonist|walkthrough|dev build|prototype|test footage|full game|vazamento|vazou|vazad[oa]|vazador|filtraci[oó]n|filtrad[oa]|filtr[oó]|filtraron|fuite|fuit[eé]|geleakt|durchgesickert|trapelat[oa]|s[ıi]z[ıi]nt[ıi]|утечк|слит|слив|wyciek|bocoran|bocor|リーク|流出|ネタバレ|유출|리크|泄露|泄漏|爆料|剧透|劇透|تسريب))/i)
+x.com,twitter.com##[data-testid="trend"]:has-text(/cyber[\s-]?le(?:ak|ek)|サイバーリーク|киберлик|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))|гта\W*(?:6|vi)))(?=[\s\S]*(?:le[ae]k|vazamento|vazou|filtraci[oó]n|fuite|geleakt|trapelat[oa]|утечк|wyciek|bocoran|リーク|流出|유출|泄露|泄漏|تسريب))/i)
+
+! Quote-post specific: scans only the quoted box (div[role="link"]) inside a post
+x.com,twitter.com##article:has(div[role="link"]:has-text(/cyber[\s-]?le(?:ak|ek)|サイバーリーク|киберлик|^(?=[\s\S]*(?:gta\W*(?:6|vi(?![a-z]))|grand theft auto\W*(?:6|vi(?![a-z]))|гта\W*(?:6|vi)|グランド・セフト・オート|侠盗猎车手|俠盜獵車手|그랜드 ?테프트 ?오토))(?=[\s\S]*(?:le[ae]k|spoiler|footage|gameplay|datamine|insider|rumou?r|hack|breach|vazamento|vazou|vazad[oa]|filtraci[oó]n|filtrad[oa]|fuite|geleakt|trapelat[oa]|утечк|wyciek|bocoran|リーク|流出|ネタバレ|유출|泄露|泄漏|爆料|تسريب))/i))
 
 ! --- SPOILERS: OTHER SITES ---
 
@@ -143,6 +151,22 @@ reddit.com##search-telemetry-tracker:not(:has(search-telemetry-tracker)):has-tex
 
 ! --- BLOCK SPOILER SEARCHES BEFORE THEY LOAD ---
 /^https?:\/\/(?:[a-z0-9-]+\.)*(?:reddit\.com|youtube\.com|x\.com|twitter\.com|bing\.com|google\.[a-z.]+)\/(?:search|results)[^#]*[?&](?:q|search_query)=(?:(?=[^&#]*(?:gta|grand(?:\+|%20|-)theft))(?=[^&#]*(?:le[ae]k|spoiler|footage|gameplay|datamine|insider|rumou?r|hack|breach))|[^&#]*cyber(?:\+|%20|-)?le[ae]k)/i$doc
+
+! --- EARLY BLOCKING: stop spoiler searches before results load (no flicker) ---
+! Hide-after-load rules (:has-text) can only run once results are already on the page.
+! These block the page or the search request itself, so there is nothing to flash.
+
+! 1) Full-page searches using other-language leak words (Latin-script only, URLs are percent-encoded)
+/^https?:\/\/(?:[a-z0-9-]+\.)*(?:reddit\.com|youtube\.com|x\.com|twitter\.com|bing\.com|google\.[a-z.]+|duckduckgo\.com|brave\.com|startpage\.com|yahoo\.com|ecosia\.org|qwant\.com|kagi\.com|yandex\.[a-z.]+|mojeek\.com)\/[^#]*[?&](?:q|p|text|query|search_query)=(?=[^&#]*(?:gta|grand(?:\+|%20|-)theft))(?=[^&#]*(?:vazament|vazou|vazad|filtraci|filtrad|fuite|geleakt|trapelat|wyciek|bocor))/i$doc
+
+! 2) X search results: X loads these in-page, so block the search request itself
+/^https:\/\/(?:x|twitter)\.com\/i\/api\/graphql\/[^\/]+\/SearchTimeline\?[^#]*rawQuery(?:%22|")(?:%3A|:)(?:%22|")(?:(?=[^&#]*?(?:gta|grand(?:%20|\+|-)theft))(?=[^&#]*?(?:le[ae]k|spoiler|footage|gameplay|datamine|insider|rumou?r|hack|breach|vazament|vazou|vazad|filtraci|filtrad|fuite|geleakt|trapelat|wyciek|bocor))|[^&#]*?cyber(?:%20|\+|-)?le[ae]k)/i$xhr
+
+! 3) X search suggestions while typing
+/^https:\/\/(?:x|twitter)\.com\/i\/api\/1\.1\/search\/typeahead\.json[^#]*[?&]q=(?:(?=[^&#]*(?:gta|grand(?:%20|\+|-)theft))(?=[^&#]*(?:le[ae]k|spoiler|footage|gameplay|datamine|insider|rumou?r|hack|breach|vazament|vazou|vazad|filtraci|filtrad|fuite|geleakt|trapelat|wyciek|bocor))|[^&#]*cyber(?:%20|\+|-)?le[ae]k)/i$xhr
+
+! 4) Blank the page instantly on a spoiler search URL (also on in-page navigation, needs recent uBO)
+x.com,twitter.com,youtube.com##body:matches-path(/^\/(?:search|results)[^#]*[?&](?:q|search_query)=(?:(?=[^&#]*(?:gta|grand(?:\+|%20|-)theft))(?=[^&#]*(?:le[ae]k|spoiler|footage|gameplay|datamine|insider|rumou?r|hack|breach|vazament|vazou|vazad|filtraci|filtrad|fuite|geleakt|trapelat|wyciek|bocor))|[^&#]*cyber(?:\+|%20|-)?le[ae]k)/i)
 
 ! --- DUCKDUCKGO ---
 ! Block spoiler searches (page load, and the in-page results request)
