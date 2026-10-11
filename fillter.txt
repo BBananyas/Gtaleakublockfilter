@@ -29,13 +29,13 @@ youtube.com##yt-chip-cloud-chip-renderer:has-text(/^Shorts$/)
 ! youtube.com/shorts/*$doc,uritransform=/\/shorts\//\/watch?v=/
 
 ! --- BLOCKED CHANNELS (add new ones as |Name before the closing /i) ---
-youtube.com##ytd-channel-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
-youtube.com##ytd-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
-youtube.com##ytd-rich-item-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
-youtube.com##ytd-grid-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
-youtube.com##ytd-compact-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
-youtube.com##yt-lockup-view-model:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
-youtube.com##ytd-playlist-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552|Vice Daily/i)
+youtube.com##ytd-channel-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##ytd-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##ytd-rich-item-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##ytd-grid-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##ytd-compact-video-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##yt-lockup-view-model:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
+youtube.com##ytd-playlist-renderer:has-text(/AndyPants Gaming|Doctor Disaster|MrBossFTW|KlutzyKing552/i)
 
 ! --- GTA 6 / CYBERLEEK SPOILERS (YouTube, Reddit, X) ---
 
